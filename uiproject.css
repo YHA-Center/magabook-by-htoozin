@@ -1,0 +1,227 @@
+:root{
+    --main-color: #9ccd62;
+    --secondary:   #a7e0e9;
+    --amimae: #e0ddca;
+    --text-color: #2ea1da;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 100vh;
+    background-color: var(--main-color);
+
+}
+.nav{
+    width: 100%;
+    height: 100px;
+    margin-top: 20px;
+}
+.nav a{
+    text-decoration: none;
+    color: black;
+    margin: 20px 30px;
+    font-size: 15px;
+}
+.nav nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+}
+.nav #Boo{
+    color: var(--text-color);
+    border-bottom: 2px solid var(--text-color);
+}
+.nav a:hover{
+    color: var(--text-color);
+    border-bottom: 2px solid var(--text-color);
+}
+.nav .log{
+    border: 3px solid gold;
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    margin-top: 200px;
+}
+.main img {
+    width: 100%;
+    text-align: center;
+}
+.book  .img img{
+    width: 100%;
+    border-radius: 10px;
+    background-color: var(--amimae);
+    margin-top: 100px;
+}
+.book #one .col-xl-3 {
+    float: left;
+}
+.main h3{
+    font-size: 50px;
+    color: var(--main-color);
+    margin-bottom: 30px;
+}
+.main ul li{
+    padding: 20px 10px;
+    color: var(--text-color);
+}
+button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    background-color: #171717;
+    padding: 1em 2em;
+    border: none;
+    border-radius: .6rem;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+button span:not(:nth-child(6)) {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 30px;
+    width: 30px;
+    background-color: #0c66ed;
+    border-radius: 50%;
+    transition: .6s ease;
+}
+button span:nth-child(6) {
+    position: relative;
+}  
+button span:nth-child(1) {
+    transform: translate(-3.3em, -4em);
+}
+  
+button span:nth-child(2) {
+    transform: translate(-6em, 1.3em);
+}
+  
+button span:nth-child(3) {
+    transform: translate(-.2em, 1.8em);
+}
+  
+button span:nth-child(4) {
+    transform: translate(3.5em, 1.4em);
+}
+  
+button span:nth-child(5) {
+    transform: translate(3.5em, -3.8em);
+}
+  
+button:hover span:not(:nth-child(6)) {
+    transform: translate(-50%, -50%) scale(4);
+    transition: 1.5s ease;
+}
+.book {
+    width: 100%;
+    margin-top: 200px;
+} 
+.book button{
+    position: absolute;
+    transform: translate(500% , -200%);
+} 
+.book .onepiece{
+    text-align: center;
+    margin: 20px;
+    font-weight: bold;
+    font-size: 25px;
+}
+.book h4{
+    border-bottom: 3px solid gold;
+    display: inline-flex;
+    margin-left: 670px;
+    padding: 10px 30px;
+}
+.footer{
+    margin-top: 200px;
+    width: 100%;
+    height: 650px;
+    background-color: var(--secondary);
+    padding-top: 50px;
+    position: relative;
+}
+.footer h1{
+    color: black;
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+    letter-spacing: 2px;
+}
+.footer .col-lg-3 ul li a{
+    text-decoration: none;
+    margin-top: 30px;
+    color: black;
+    line-height: 4;
+    font-weight: bold;
+}
+#footer .col-lg-3 ul li a:hover{
+    padding-bottom: 5px;
+    color: black;
+    border-bottom: 1px solid var(--main-color);
+}
+.footer .container-fluid{
+    margin-top: 50px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--main);
+}
+.footer .row2{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;    
+}
+.footer .row2 h4{
+    font-size: 30px;
+}
+.footer .row2 #col-12 i{
+    margin: 20px;
+    font-size: 50px;
+}
+.footer .row2 #col-12 i:hover {
+    scale: 1.2;
+    background-color: var(--main-color);
+    cursor: pointer;
+}
+.footer ul{
+    list-style-type: none;
+}
+#toogle{
+    display: noen;
+}
+label[for="toogle"]{
+    display: none;
+}
+label[for="toogle"] span{
+    font-size: 40px;
+}
+@media(max-width:900px){
+    h1{
+        font-size: 12vw;
+        text-align: center;
+    }
+    .col-xl-6{
+        margin-top: 40px;
+        text-align: center;
+    }
+    .footer{
+        background-color: var(--secondary);
+        height: 1550px;
+    }
+}
